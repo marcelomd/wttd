@@ -83,3 +83,6 @@ USE_TZ = True
 
 STATIC_ROOT = BASE_DIR.child('staticfiles')
 STATIC_URL = '/static/'
+
+# South
+SOUTH_TESTS_MIGRATE = False
