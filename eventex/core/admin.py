@@ -1,15 +1,15 @@
 # contact: utf-8
 from django.contrib import admin
-from eventex.core.models import Speaker, Contact
+from eventex.core.models import Speaker, Contact, Talk
 
-class ContactInLine(admin.TabularInLine):
+class ContactInline(admin.TabularInline):
     model = Contact
     extra = 1
 
 
-class SpeakserAdmin(admin.ModelAdmin):
-    inlines = [ContactInLine, ]
+class SpeakerAdmin(admin.ModelAdmin):
+    inlines = [ContactInline,]
     prepopulated_fields = {'slug': ('name', )}
 
-
 admin.site.register(Speaker, SpeakerAdmin)
+admin.site.register(Talk)
