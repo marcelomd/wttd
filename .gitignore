@@ -1,8 +1,8 @@
 .venv/
 
-*.pyc
-
 .env
-.sqlite3
+
+*.pyc
+*.sqlite3
 
 eventex/staticfiles
