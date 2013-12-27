@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'south',
     'eventex.core',
     'eventex.subscriptions',
+    'eventex.myauth',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -86,3 +87,6 @@ STATIC_URL = '/static/'
 
 # South
 SOUTH_TESTS_MIGRATE = False
+
+
+AUTH_USER_MODEL='myauth.User'
